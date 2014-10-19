@@ -6,7 +6,7 @@ import org.newdawn.slick.GameContainer
 import org.newdawn.slick.Graphics
 import org.newdawn.slick.SlickException
 
-class SimpleSlickGame extends BasicGame("My game") {
+class SimpleSlickGame(name: String) extends BasicGame(name) {
   def init(gc: GameContainer) = {
   
   }
@@ -23,7 +23,7 @@ class SimpleSlickGame extends BasicGame("My game") {
 
 object Game extends App {
   try {
-    var appgc = new AppGameContainer(new SimpleSlickGame)
+    var appgc = new AppGameContainer(new SimpleSlickGame("Ships"))
     appgc.setDisplayMode(640, 480, false)
     appgc.setShowFPS(false)
     appgc.start()
