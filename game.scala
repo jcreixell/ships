@@ -23,7 +23,7 @@ class SimpleSlickGame(name: String) extends BasicGame(name) {
 
 object Game extends App {
   try {
-    var appgc = new AppGameContainer(new SimpleSlickGame("Ships"))
+    var appgc = new AppGameContainer(new Ships("Ships"))
     appgc.setDisplayMode(640, 480, false)
     appgc.setShowFPS(false)
     appgc.start()
